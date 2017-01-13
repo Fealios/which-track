@@ -1,5 +1,16 @@
+.header {
+
+}
+
+#stackChoice {
+
+  padding: 30px;
+}
+
 .choice {
   display: none;
+
+
 }
 
 .language {
@@ -7,7 +18,7 @@
 }
 
 .radio {
-  border: solid;
+
 }
 
 img {
