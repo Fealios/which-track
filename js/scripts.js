@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $('#stack').submit(function(event){
+    $('.choice').hide();
+    $('.language').hide();
     var stack = $('input:radio[name=stack]:checked').val();
 
     // var stack = $('#track').val();
@@ -17,9 +19,11 @@ $(document).ready(function(){
   $('#choiceA').submit(function(event){
     var a = $('input:radio[name=firstF]:checked').val();
     if(a === "design"){
-      $('#css').show();
+      $('#A').slideUp();
+      $('#css').slideDown();
     } else if (a === "content"){
-      $('#B').show();
+      $('#A').slideUp();
+      $('#B').slideDown();
     }
 
     event.preventDefault();
@@ -28,9 +32,11 @@ $(document).ready(function(){
   $('#choiceB').submit(function(event){
     var b = $('input:radio[name=secondF]:checked').val();
     if (b === "app"){
-      $('#ruby').show();
+      $('#B').slideUp();
+      $('#ruby').slideDown();
     } else if (b === "content"){
-      $('#php').show();
+      $('#B').slideUp();
+      $('#php').slideDown();
     }
 
     event.preventDefault();
@@ -39,9 +45,11 @@ $(document).ready(function(){
   $('#choiceC').submit(function(event){
     var c = $('input:radio[name=firstB]:checked').val();
     if(c === 'small'){
-      $('#java').show();
+      $('#C').slideUp();
+      $('#java').slideDown();
     } else if (c === 'enterprise'){
-      $('#D').show();
+      $('#C').slideUp();
+      $('#D').slideDown();
     }
 
     event.preventDefault();
@@ -50,9 +58,11 @@ $(document).ready(function(){
   $('#choiceD').submit(function(event){
     var d = $('input:radio[name=secondB]:checked').val();
     if(d === 'optomize'){
-      $('#java').show();
+      $('#D').slideUp();
+      $('#java').slideDown();
     } else if (d === 'building'){
-      $('#csharp').show();
+      $('#D').slideUp();
+      $('#csharp').slideDown();
     }
 
     event.preventDefault();
