@@ -9,7 +9,7 @@ $(document).ready(function(){
     var stack = $('#track').val();
     if(stack === "front") {
       console.log('front stack chosen');
-      $('#front').show();
+      $('#A').show();
     } else if (stack === "back") {
       console.log('back stack chosen');
       $('#back').show();
@@ -22,17 +22,18 @@ $(document).ready(function(){
     var a = $('#firstF').val();
     if(a === "design"){
       $('#css').show();
-    } else if (a === "app"){
+    } else if (a === "content"){
       $('#B').show();
     }
 
     event.preventDefault();
   });
   //end of second choice --------------------------------
-  $('#secondF').submit(function(event){
-    if (b === 1){
+  $('#choiceB').submit(function(event){
+    var b = $('#secondF').val();
+    if (b === "app"){
       $('#ruby').show();
-    } else if (b === 2){
+    } else if (b === "content"){
       $('#php').show();
     }
   });
