@@ -26,7 +26,7 @@ $(document).ready(function(){
   });
   //end of second choice --------------------------------
   $('#choiceB').submit(function(event){
-    var b = $('input:radio[name="secondF"]:checked').val();
+    var b = $('input:radio[name=secondF]:checked').val();
     if (b === "app"){
       $('#ruby').show();
     } else if (b === "content"){
@@ -37,7 +37,7 @@ $(document).ready(function(){
   });
   //end of third choice ----------------------------------
   $('#choiceC').submit(function(event){
-    var c = $('#firstB').val();
+    var c = $('input:radio[name=firstB]:checked').val();
     if(c === 'small'){
       $('#java').show();
     } else if (c === 'enterprise'){
@@ -48,7 +48,7 @@ $(document).ready(function(){
   });
   //end of fourth choice ---------------------------------
   $('#choiceD').submit(function(event){
-    var d = $('#secondB')
+    var d = $('input:radio[name=secondB]:checked').val();
     if(d === 'optomize'){
       $('#java').show();
     } else if (d === 'building'){
