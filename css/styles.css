@@ -1,24 +1,23 @@
-.header {
-
-}
-
 #stackChoice {
-
-  padding: 30px;
+  padding: 10px 20px 20px 20px;
+  /*border: solid;*/
+  /*height: 10%;*/
 }
 
 .choice {
+  border-radius: 4px;
+  padding: 30px;
+  margin-top: 40px;
+  background-color: lightgreen;
   display: none;
-
-
 }
 
 .language {
+  border-radius: 4px;
+  padding: 30px;
   display: none;
-}
-
-.radio {
-
+  margin-top: 50px;
+  background-color: lightblue;
 }
 
 img {
