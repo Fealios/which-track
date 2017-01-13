@@ -1,4 +1,4 @@
-var stack;
+// var stack = $('#track').val();
 var a;
 var b;
 var c;
@@ -6,20 +6,28 @@ var d;
 
 $(document).ready(function(){
   $('#stack').submit(function(event){
+    var stack = $('#track').val();
     if(stack === "front") {
+      console.log('front stack chosen');
       $('#front').show();
     } else if (stack === "back") {
+      console.log('back stack chosen');
       $('#back').show();
     }
+
+    event.preventDefault();
   });
   //end of first choice----------------------------------
-  $('#firstF').submit(function(event){
-    if(a === 1){
+  $('#choiceA').submit(function(event){
+    var a = $('#firstF').val();
+    if(a === "design"){
       $('#css').show();
-    } else if (a === 2){
+    } else if (a === "app"){
       $('#B').show();
     }
-  })
+
+    event.preventDefault();
+  });
   //end of second choice --------------------------------
   $('#secondF').submit(function(event){
     if (b === 1){
@@ -27,7 +35,7 @@ $(document).ready(function(){
     } else if (b === 2){
       $('#php').show();
     }
-  })
+  });
   //end of third choice ----------------------------------
   $('#firstB').submit(function(event){
     if(c === 1){
@@ -35,7 +43,7 @@ $(document).ready(function(){
     } else if (c === 2){
       $('#D').show();
     }
-  })
+  });
   //end of fourth choice ---------------------------------
   $('#secondB').submit(function(event){
     if(d === 1){
@@ -43,5 +51,6 @@ $(document).ready(function(){
     } else if (d === 2){
       $('#csharp').show();
     }
-  })
-})
+  });
+  //end of fifth choice ----------------------------------
+});

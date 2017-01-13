@@ -3,16 +3,33 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Which track?</title>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="radio" name="ForB" value="front" id="front">
-        <label class="radio" for="firstChoice">Front</label>
-      </form>
+    <div class="container">
+      <div class="container" id="stackChoice">
+        <form id="stack">
+          <select id="track">
+            <option value="front">Front</option>
+            <option value="back">Back</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="container" id="A">
+        <form id="choiceA">
+          <p>Are you all Design, or more App Based?</p>
+          <select id="firstF">
+            <option value="design">Design</option>
+            <<option value="app">App Based</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
     </div>
   </body>
 </html>
