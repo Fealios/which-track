@@ -1,3 +1,15 @@
 .choice {
   display: none;
 }
+
+.language {
+  display: none;
+}
+
+.radio {
+  border: solid;
+}
+
+img {
+  width: 100%;
+}

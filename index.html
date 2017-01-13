@@ -9,38 +9,124 @@
   </head>
   <body>
     <div class="container">
-      <div class="container" id="stackChoice">
-        <form id="stack">
-          <select id="track">
-            <option value="front">Front</option>
-            <option value="back">Back</option>
-          </select>
-          <button type="submit">Submit</button>
-        </form>
+      <div class="header">
+        <h1>It's time to pick your next coding language!</h1>
       </div>
+      <div class="container row" id="stackChoice">
+        <form id="stack">
+          <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="stack" value="front">
+                <h3>Front End</h3>
+                  <img src="images/front.png" alt="Front End Symbol">
+                </input>
+              </label>
+            </div>
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="stack" value="back">
+                <h3>Back End</h3>
+                  <img src="images/back.jpg" alt="Back end Symbol">
+                </input>
+              </label>
+            </div>
+              <button type="submit">Submit</button>
+          </form>
+        </div>
 
       <div class="container choice" id="A">
+        <p>Are you all Design, or more content based?</p>
+
         <form id="choiceA">
+          <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="firstF" value="design">
+                Design
+                </input>
+              </label>
+            </div>
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="firstF" value="content">
+                  Content
+                </input>
+              </label>
+            </div>
+              <button type="submit">Submit</button>
+          </form>
+        <!-- <form id="choiceA">
           <p>Are you all Design, or more content based?</p>
           <select id="firstF">
             <option value="design">Design</option>
             <<option value="content">Content Based</option>
           </select>
           <button type="submit">Submit</button>
-        </form>
+        </form> -->
       </div>
 
       <div class="container choice" id="B">
+        <p>Do you want to manage an App, or the Content more?</p>
+
         <form id="choiceB">
+          <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="secondF" value="app">
+                App
+                </input>
+              </label>
+            </div>
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="secondF" value="content">
+                  Content
+                </input>
+              </label>
+            </div>
+              <button type="submit">Submit</button>
+          </form>
+        <!-- <form id="choiceB">
           <p>Do you want to manage an App, or more the Web Content?</p>
           <select id="secondF">
             <option value="app">App</option>
             <<option value="content">Content</option>
           </select>
           <button type="submit">Submit</button>
+        </form> -->
+      </div>
+
+      <div class="container language" id="css">
+        <p>css</p>
+      </div>
+
+      <div class="container language" id="ruby">
+        <p>ruby </p>
+      </div>
+
+      <div class="container language" id="php">
+        <p>php</p>
+      </div>
+
+      <div class="container choice" id="C">
+        <form id="choiceC">
+          <p>Do you want to work on Enterprise software, or smaller scale?</p>
+          <select id="firstB">
+            <option value="enterprise">Enterprise</option>
+            <<option value="small">Smaller Scale</option>
+          </select>
+          <button type="submit">Submit</button>
         </form>
       </div>
 
+      <div class="container choice" id="D">
+        <form id="choiceD">
+          <p>Do you want to focus on Optomization, or just Building?</p>
+          <select id="secondB">
+            <option value="optomize">Optomization</option>
+            <<option value="building">Building</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
     <!-- end of main container  -->
   </body>

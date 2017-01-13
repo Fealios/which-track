@@ -1,25 +1,21 @@
-// var stack = $('#track').val();
-var a;
-var b;
-var c;
-var d;
-
 $(document).ready(function(){
   $('#stack').submit(function(event){
-    var stack = $('#track').val();
+    var stack = $('input:radio[name=stack]:checked').val();
+
+    // var stack = $('#track').val();
     if(stack === "front") {
       console.log('front stack chosen');
       $('#A').show();
     } else if (stack === "back") {
       console.log('back stack chosen');
-      $('#back').show();
+      $('#C').show();
     }
 
     event.preventDefault();
   });
   //end of first choice----------------------------------
   $('#choiceA').submit(function(event){
-    var a = $('#firstF').val();
+    var a = $('input:radio[name=firstF]:checked').val();
     if(a === "design"){
       $('#css').show();
     } else if (a === "content"){
@@ -30,28 +26,36 @@ $(document).ready(function(){
   });
   //end of second choice --------------------------------
   $('#choiceB').submit(function(event){
-    var b = $('#secondF').val();
+    var b = $('input:radio[name="secondF"]:checked').val();
     if (b === "app"){
       $('#ruby').show();
     } else if (b === "content"){
       $('#php').show();
     }
+
+    event.preventDefault();
   });
   //end of third choice ----------------------------------
-  $('#firstB').submit(function(event){
-    if(c === 1){
+  $('#choiceC').submit(function(event){
+    var c = $('#firstB').val();
+    if(c === 'small'){
       $('#java').show();
-    } else if (c === 2){
+    } else if (c === 'enterprise'){
       $('#D').show();
     }
+
+    event.preventDefault();
   });
   //end of fourth choice ---------------------------------
-  $('#secondB').submit(function(event){
-    if(d === 1){
+  $('#choiceD').submit(function(event){
+    var d = $('#secondB')
+    if(d === 'optomize'){
       $('#java').show();
-    } else if (d === 2){
+    } else if (d === 'building'){
       $('#csharp').show();
     }
+
+    event.preventDefault();
   });
   //end of fifth choice ----------------------------------
 });
